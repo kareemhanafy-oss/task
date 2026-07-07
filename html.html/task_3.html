@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kareem page</title>
+    <link rel="icon" type="jpg" href="C:\Users\kareem\Desktop\task\html.html\picture\batman-new.jpg">
+</head>
+
+<body>
+    <header>
+        <h1><strong>karem's portfolio</strong></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#skill">my skill</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#contect">contect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <article id="home">
+        <h2>hello,my name is kareem.wellcome to my portfoliow</h2>
+        <p>Technology has always been one of my biggest interests.
+            I enjoy creating web pages, learning new programming concepts,
+            and working on projects that improve my skills.</p>
+        <label for="cat">my cat</label>
+        <br>
+        <img src="C:\Users\kareem\Desktop\task\html.html\picture\images.jpg" alt="my cat" width="200px" id="cat">
+    </article>
+    <hr>
+    <article id="skill">
+        <label for="ul">my skill's</label>
+        <ul id="ul">
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+            <li>type script</li>
+        </ul>
+        <br>
+        <label for="ol">skill's i learnt by order</label>
+        <ol>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+            <li>type script</li>
+        </ol>
+        <label for="tb"><strong>this what i go through <mark>last year</mark></strong></label>
+        <table border="2" id="tb"> <!-- also there cellpadding="10px" for space -->
+            <thead>
+                <tr>
+                    <th>My Skill</th>
+                    <th>Time Taken</th>
+                    <th>Difficulty Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">HTML & CSS</td>
+                    <td>60 Hours</td>
+                    <td>Easy</td>
+                </tr>
+
+                <tr>
+                    <td>60 Hours</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>js</td>
+                    <td>600 hours</td>
+                    <td>hard</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total: 3 Skills</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>so what is your favorite code language</p>
+
+        <form action="">
+            <input type="radio" id="html" name="language" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="language" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="js" name="language" value="JavaScript">
+            <label for="js">JavaScript</label><br>
+            <button type="button">submit</button>
+        </form>
+    </article>
+    <hr>
+    <aside id="gallery">
+
+        <h2>some cat's to see</h2>
+
+        <figure>
+
+            <img src="C:\Users\kareem\Desktop\task\html.html\picture\its-so-difficult-to-get-a-good-picture-of-our-black-cat-so-v0-selc1u0qivz41.webp"
+                alt="black_cat" width="200px">
+            <figcaption>cool black cat</figcaption>
+
+        </figure>
+
+        <figure>
+            <img src="C:\Users\kareem\Desktop\task\html.html\picture\61bhE3Gtm4L._AC_UF1000,1000_QL80_.jpg"
+                alt="white_cat" width="200px">
+            <figcaption>cool white cat</figcaption>
+
+        </figure>
+
+        <figure>
+            <img src="C:\Users\kareem\Desktop\task\html.html\picture\closeup-portrait-ginger-tabby-cat-260nw-2748630493.webp"
+                alt="orange_cat" width="200px">
+            <figcaption>cool orange cat</figcaption>
+
+        </figure>
+
+    </aside>
+    <hr>
+    <div id="contect">
+        <form action="">
+
+            <label for="name">name:</label>
+            <input type="text" name="" id="name" required>
+            <br><br>
+
+            <label for="email">email:</label>
+            <input type="email" name="=" id="email" required>
+            <br><br>
+
+            <label for="phone-number">phone number:</label>
+            <input type="text" name="phone-number" id="phone-number" placeholder="for exmple 0155387169">
+            <br><br>
+
+            <label for="datemax">Enter your bitrth date:</label>
+            <input type="date" id="datemax" name="datemax" max="2026-12-31">
+            <br><br>
+            <label for="">Choose where to send</label>
+            <select name="" id="">
+                <option value="">email</option>
+                <option value="">number</option>
+                <option value="">linkden</option>
+            </select>
+            <br><br>
+            <input type="submit" value="done">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+    <hr>
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>What are you learning now?</summary>
+            <p>I am currently learning HTML and CSS.</p>
+        </details>
+
+        <details>
+            <summary>What is your favorite programming language?</summary>
+            <p>JavaScript is my favorite because it makes websites interactive.</p>
+        </details>
+
+        <details>
+            <summary>Do you like working on projects?</summary>
+            <p>Yes, I enjoy building simple web projects to improve my skills.</p>
+        </details>
+    </section>
+    <hr>
+    <footer>
+        <address>
+            Email:
+            <a href="kareemhanafy008@gmail.com" target="_blank">kareemhanafy008@gmail.com</a>
+            <br>
+            Location: Egypt
+        </address>
+
+        <p>Kareem Hanafy &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>
