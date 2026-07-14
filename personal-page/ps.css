@@ -173,3 +173,6 @@
         transform: translate(16px,20px);
     }
 
+    .clear{
+        clear: both;
+    }
