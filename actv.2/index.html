@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Task</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="actv.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="task10.css">
+    <link rel="stylesheet" href="/css/media.css">
+
+    <title>Document</title>
 </head>
-
 <body>
-
-    <div class="parent">
-
-        <div class="child1">
-            <h3>Child</h3>
+    <header class="hero">
+    <nav>
+        <div class="logo">
+            <a href="#home"><img src="../images/logo.png" alt="logo"></a>
         </div>
-
-        <div class="child2">
-            <h3>Child</h3>
+        <div class="navig">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
         </div>
-
-        <div class="child3">
-            <h3>Child</h3>
+    </nav>
+    <section id="home">
+        <div class="caption">
+            <p>
+                welcome to
+            </p>
+            <h1>
+                Family Bakery
+            </h1>
+            <p>
+                We're the biggest best equipped and most advanced Bakery in the greater<br>Los Angeles area.
+            </p>
         </div>
-
-        <div class="child4">
-            <h3>Child</h3>
+        <div class="button-c">
+            <button type="button" class="btn btn-primary">contact us</button>
+            <button type="button" class="btn btn-info">learn more</button>
         </div>
-
-        <div class="child5">
-            <h3>Child</h3>
-        </div>
-
-        <div class="child6">
-            <h3>Child</h3>
-        </div>
-        <button class="btn btn-success btn-lg">Test Button</button>
-
-
-    </div>
-    <script src="bootstrap.bundle.js.map"></script>
+    </section>
+    </header>
+    <main>
+        <section id="about">
+            <div class="img">
+                <img src="../images/bakery.jpg" alt="bakery">
+            </div>
+            <div class="content">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.Unde accusantium delectus <br>quibusdam deserunt eius repellendus beatae maxime,officiis, voluptatem iusto praesentium, pariatur quo dignissimos iure. Alias ratione distinctio ea architecto.
+                </p>
+                <ul>
+                    <li>first reason</li>
+                    <li>second reason</li>
+                    <li>third reason</li>
+                    <li>fourth reason</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <textarea name="message" id="message" cols="40" rows="5" placeholder="type your message"></textarea>
+            <br>
+            <button name="message">send</button>
+        </section>
+        <section id="services">
+            <h2>this is our services:</h2>
+            <article class="container-1">
+                <div class="item item-1">
+                    <img src="../images/plain_baked_baguette.jpg" alt="baguette">
+                    <h3>baguette</h3>
+                    <button>choose</button>
+                </div>
+                <div class="item item-2">
+                    <img src="../images/images (2).jpg" alt="cakes">
+                    <h3>cakes</h3>
+                    <button>choose</button>
+                </div>
+                <div class="item item-3">
+                    <img src="../images/images (1).jpg" alt="juice">
+                    <h3>juice</h3>
+                    <button>choose</button>
+                </div>
+                <div class="item item-4">
+                    <img src="../images/Nes_ConEco3.0_B2_Article25-WhatIsLongBlackCoffee_Image 6-1066 × 970.jpg.webp" alt="">
+                    <h3>coffee</h3>
+                    <button>choose</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>All rights are reserved &copy;</p>
+        <address>
+            number:+###########
+        </address>
+        <address>
+            email:username@gmai.com
+        </address>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

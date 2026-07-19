@@ -1,72 +1,167 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    direction: ltr;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hero{
+     height: 100vh;
+    background-color: blueviolet;
+    background-image: url(../images/background.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    color: whitesmoke;
+}
+nav{
+    background-color: tomato;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo img{
+    width: 100px;
 
-body {
-    background-color: antiquewhite;
+}
+.navig{
+    width: 90%;
+}
+.navig ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+.navig a{
+    color: white;
+    text-decoration: none;
+}
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.button-c{
+    display: flex;
+    gap: 10px;
 }
 
-.parent {
+.btn-primary{
+    background-color: rgba(222, 184, 135, 0.404);
+
+}
+.btn-info{
+    background-color: rgba(165, 42, 42, 0);
+}
+btn:hover{
+    background-color: yellow;
+}
+#about{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width: 30%;
+    position: absolute;
+    left:100px;
+}
+img{
+width: 100%;
+}
+.content{
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+}
+#contact{
+    background-color: rgba(128, 128, 128, 0.288);
+    height: 40vh;
+}
+#services{
+    background-color: rgba(137, 43, 226, 0.189);
+}
+.container-1{
+    color: whitesmoke;
     display: grid;
-    grid-template-columns: 60% 40%;
-    border: 1px solid white;
-    grid-template-rows: 300px 100px;
-    grid-template-areas: "cell1 cell2" "cell3 cell4";
+    text-align: center;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "cell1 cell2"
+    "cell3 cell4"
+    ;
+    gap:15px;
+    position: relative;
 }
-
-
-.child {
-    height: 80px;
-    color: aliceblue;
+.item img{
+    transition-duration: 2s;
+     overflow: hidden;
+}
+.item img:hover{
+    transform: scale(1.1);
+}
+.item h3{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: 0;
+    transform: translate(-50%,-50%);
+}
+.item{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-weight: bold;
+    text-align: center;
+    gap: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
 }
-
-.child1 {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    color: aliceblue;
-    grid-area: cell2;
-
+.item button{
+    margin-top: 7px;
 }
-
-.child2 {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    color: aliceblue;
-    grid-area: cell4;
-
+.item-1{
+grid-area: cell1;
 }
-
-.child3 {
-    background-color: #000000;
-    border: 1px solid white;
-    color: aliceblue;
-    grid-area: cell3;
-
+.item-2{
+grid-area: cell2;
 }
-
-.child4 {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    color: aliceblue;
-    grid-area: cell1;
-
+.item-3{
+grid-area: cell3;
 }
-
-.child5 {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    color: aliceblue;
+.item-4{
+grid-area: cell4;
 }
-
-.child6 {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    color: aliceblue;
+.item img{
+    width:250px;
+}
+footer{
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(42, 42, 168);
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
 }
