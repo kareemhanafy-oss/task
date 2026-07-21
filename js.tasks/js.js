@@ -1,131 +1,27 @@
-let degree = prompt("Enter your degree:");
+const nameInput = document.querySelector(".name");
+const ageInput = document.querySelector(".age");
+const jobInput = document.querySelector(".job");
+const submitBtn = document.querySelector("button");
 
-console.log(degree);
+submitBtn.addEventListener("click", function () {
 
-if (degree >= 90) {
-    console.log("Excellent");
-}
-else if (degree >= 75) {
-    console.log("Very Good");
-}
-else if (degree >= 50) {
-    console.log("Pass");
-}
-else {
-    console.log("Fail");
-}
+    if (
+        nameInput.value === "" &
+        ageInput.value === "" &
+        jobInput.value === ""
+    ) {
+        alert("Please fill all fields");
+        return;
+    }
 
+    console.log("Name:", nameInput.value);
+    console.log("Age:", ageInput.value);
+    console.log("Job:", jobInput.value);
 
-var player1 = prompt("player1 Choose paper or rock or m2s");
-var player2 = prompt("player2 Choose paper or rock or m2s");
+    if (Number(ageInput.value) < 18) {
+        alert("You are under age");
+    } else {
+        alert("Registration Completed");
+    }
 
-
-if (player1 === player2) {
-    console.log("tie");
-} else if (player1 === "rock" && player2 === "m2s") {
-    console.log("Player 1 Wins");
-} else if (player1 === "paper" && player2 === "rock") {
-    console.log("Player 1 Wins");
-} else if (player1 === "m2s" && player2 === "paper") {
-    console.log("Player 1 Wins");
-} else {
-    console.log("player2 wins");
-}
-
-let number = prompt("enter your number")
-
-if (number % 2 === 0) {
-    console.log("even");
-
-}
-else {
-    console.log("odd");
-
-}
-
-
-let num1 = Number(prompt("Enter first number"));
-let operation = prompt("Choose (+, -, *, /)");
-let num2 = Number(prompt("Enter second number"));
-
-if (operation === "+") {
-    console.log(num1 + num2);
-} else if (operation === "-") {
-    console.log(num1 - num2);
-} else if (operation === "*") {
-    console.log(num1 * num2);
-} else if (operation === "/") {
-    console.log(num1 / num2);
-} else {
-    console.log("Invalid Operation");
-}
-
-
-
-for (var i = 1; i < 10; i++) {
-    console.log(i);
-}
-
-
-
-var i = 1;
-while (i < 10; i++) {
-    console.log(i);
-}
-
-
-var i = 1;
-do {
-    console.log(i);
-    i++;
-} while (i <= 10);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-for (var i = 1; i < 10; i++) {
-    console.log(i);
-};
-
-
-
-var i = 1;
-while (i < 10) {
-    console.log(i);
-    i++;
-}
-
-var i = 1;
-do {
-    console.log(i);
-    i++;
-} while (i <= 10);
-
-
-
-var user = {
-    username: "kareem",
-    userage: "25",
-    userfood: "pizza",
-    usergender: "male",
-}
-
-console.log(user.userfood);
+});
